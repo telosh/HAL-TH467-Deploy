@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Line-bold";
+  src: url("/WOFF2/LINESeedJP_OTF_Bd.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Line-Exbold";
+  // src: url("/WOFF2/LINESeedJP_OTF_Eb.woff2") format("woff2");
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Line-Exbold", sans-serif;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.App {
+  background: #fff;
+  box-shadow: 0 0 30px 3px rgba(110, 90, 70, 0.7);
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  height: 100dvh;
+  position: relative;
+  background-image: url(@assets/sougen.jpg);
+  overflow: hidden;
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.Result {
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0 30px 3px rgba(110, 90, 70, 0.7);
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  height: 100dvh;
+  position: relative;
+  // background-image: url(@assets/);
+  overflow: hidden;
+}
+.Home {
+  background: #fff;
+  box-shadow: 0 0 30px 3px rgba(110, 90, 70, 0.7);
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+.keikoku {
+  position: fixed;
+  color: #333333;
+  left: 30px;
+  top: 30px;
+  border: 2px solid #717171;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0px rgba(119, 119, 119, 0.5);
+  background-color: #fff;
+  button {
+    color: #333333;
+    font-size: 2.3rem;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 700px) {
+    //スマホ
+    display: none;
+  }
+}
+
+.home-text-wrap{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20%;
+}
+.home-text-wrap > .home-text{
+  font-size: 32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modalBtn a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 400px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #cccccc;
+  border-radius: 50vh;
+  text-align: center;
+}
+
+.modalBtn a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.modalBtn a:hover {
+  text-decoration: none;
+  background-color: #bbbbbb;
+}
+
+.modalContainer{
+  background: white;
+  padding : 10px;
+  border-radius: 3px;
+  height: 100vh;
+  div {
+    display: flex;
+    button {
+      margin-right: 0;
+      justify-content: center;
+    }
+  }
+}
