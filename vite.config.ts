@@ -4,6 +4,9 @@ import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.GITHUB_PAGES
+        ? "HAL-TH467-Deploy"         
+        : "./",
   server: {
     host: true,
     watch: {
